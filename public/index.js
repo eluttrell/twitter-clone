@@ -29,3 +29,19 @@ app.config(($stateProvider, $urlRouterProvider) => {
 
     $urlRouterProvider.otherwise('/');
 });
+
+app.controller('HomeController', ($scope, $state) => {
+
+});
+
+app.controller('ProfileController', ($scope, $state) => {
+
+});
+
+app.controller('GlobalController', ($scope, $state) => {
+
+});
+
+app.controller('FeedController', ($scope, $state) => {
+
+});
