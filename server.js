@@ -108,8 +108,6 @@ app.get('/feed', (req, res) => {
 
 
 
-
-
-app.listen(3000, function() {
-  console.log('listening on *:3000');
+app.listen(1337, function() {
+  console.log('listening on *:1337');
 });

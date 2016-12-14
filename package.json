@@ -4,9 +4,10 @@
   "description": "Twitter clone to practice MongoDB, Mongoose, Node.js, and Express",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Elijah E Allstrom-Luttrell",
   "license": "ISC",
   "dependencies": {
     "angular-ui-router": "^0.3.2",
@@ -14,5 +15,16 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongoose": "^4.7.2"
-  }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eluttrell/twitter-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eluttrell/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/eluttrell/twitter-clone#readme"
 }
