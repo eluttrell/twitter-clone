@@ -146,7 +146,7 @@ app.get('/profile', (req, res) => {
 app.post('/signup', function(req, res) {
   // Contains key-value pairs of data dsubmitted in the request body
   let userInfo = req.body;
-
+  console.log(userInfo);
   // Encrypts the new user's password and stores it in a hash variable
   bcrypt.hash(userInfo.password, 12)
     .then(function(hashedPassword) {
@@ -162,7 +162,7 @@ app.post('/signup', function(req, res) {
     .catch(function(err) {
       console.error('Error!');
       console.log(err);
-      res.status(401).json({status: "Failed", error: err.message});
+      res.status(401).json({status: "Failed", error: err.message, stack: err.stack});
     });
 });
 

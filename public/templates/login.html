@@ -1,9 +1,11 @@
 <div class="container login">
     <h1>Log In</h1>
-    <form class="" action="index.html" method="post">
+    <form class="" ng-submit="login()" method="post">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username">
+        <input ng-model="username" type="text" name="username" id="username">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input ng-model="password" type="password" name="password" id="password">
+        <br>
+        <button type="submit" name="button">Login</button>
     </form>
 </div>
